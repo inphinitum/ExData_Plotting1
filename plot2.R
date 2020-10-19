@@ -1,0 +1,1 @@
+with(hpcDf, plot(date_time, global_active_power, type = "l", ylab = "Global Active Power (kilowatts)", xlab = ""))
