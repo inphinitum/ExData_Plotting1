@@ -27,4 +27,8 @@ hpcDf <- hpcDf %>%
   mutate(sub_metering_2        = as.numeric(sub_metering_2)) %>%
   mutate(sub_metering_3        = as.numeric(sub_metering_3))
 
+dev.off()
 hist(hpcDf$global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+
+dev.copy(png, file = "plot1.png")
+dev.off()
